@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CSL Dashboard</title>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      background: #f5f7fa;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    main {
+      max-width: 800px;
+      margin: 100px auto;
+      padding: 40px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    h1 {
+      color: #1976d2;
+      margin-bottom: 24px;
+    }
+    h2 {
+      color: #2c3e50;
+      margin-top: 32px;
+    }
+    .credentials {
+      background: #f8f9fa;
+      border-radius: 8px;
+      padding: 16px 24px;
+      margin: 24px 0;
+      text-align: left;
+    }
+    .endpoint {
+      margin-top: 32px;
+      padding: 16px;
+      background: #e3f2fd;
+      border-radius: 8px;
+    }
+    a {
+      color: #1976d2;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>CSL Dashboard</h1>
+    <p>대시보드 앱이 성공적으로 빌드되었습니다.</p>
+    
+    <h2>로그인 정보</h2>
+    <div class="credentials">
+      <p><strong>이메일:</strong> admin@example.com</p>
+      <p><strong>비밀번호:</strong> password123</p>
+    </div>
+    
+    <h2>API 정보</h2>
+    <div class="endpoint">
+      <p>백엔드 API는 다음 주소에서 접근할 수 있습니다:</p>
+      <p><a href="http://localhost:3001/api">http://localhost:3001/api</a></p>
+    </div>
+
+    <p>데이터베이스에는 로그인 정보와 함께 테스트 데이터가 자동으로 추가되었습니다.</p>
+  </main>
+</body>
+</html>
