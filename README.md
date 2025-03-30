@@ -23,6 +23,39 @@
 - Docker
 - Docker Compose
 
+## 프로젝트 구조
+
+### 프론트엔드 구조
+```
+frontend/
+├─ src/
+│  ├─ assets/          # 이미지, 아이콘 등 정적 자원
+│  ├─ components/      # 재사용 가능한 컴포넌트
+│  ├─ contexts/        # React Context API를 사용한 상태 관리
+│  ├─ hooks/           # 커스텀 React 훅
+│  ├─ pages/           # 페이지 컴포넌트
+│  ├─ services/        # API 호출 및 서비스 로직
+│  ├─ styles/          # 글로벌 스타일 및 테마
+│  ├─ types/           # TypeScript 타입 정의
+│  ├─ utils/           # 유틸리티 함수
+│  ├─ App.tsx          # 메인 앱 컴포넌트
+│  └─ index.tsx        # 앱 진입점
+```
+
+### 백엔드 구조
+```
+backend/
+├─ src/
+│  ├─ config/          # 앱 설정 및 환경 변수
+│  ├─ controllers/     # API 엔드포인트 컨트롤러
+│  ├─ middleware/      # Express 미들웨어
+│  ├─ models/          # 데이터 모델 및 스키마
+│  ├─ routes/          # API 라우트 정의
+│  ├─ services/        # 비즈니스 로직 및 서비스
+│  ├─ utils/           # 유틸리티 함수
+│  └─ index.ts         # 서버 진입점
+```
+
 ## 설치 및 실행 방법
 
 ### 도커를 이용한 실행
